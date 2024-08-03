@@ -1,0 +1,62 @@
+.title{
+    background-image: url(../img/title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    font-family: "Playwrite BE VLG", cursive;
+    /* -webkit-text-stroke: 3px black; */
+    text-shadow: -1px -1px 0 #5f200e, 1px -1px 0 #5f200e, 1px 1px 0 #5f200e, 1px 1px 0 #5f200e;
+}
+
+.picture{
+    border-radius: 50%;
+}
+
+.mykyta{
+    color: #5f200e;
+}
+.mySkills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.pic{
+    display: flex;
+    justify-content: right;
+    padding-right: 100px;
+}
+
+
+
+.pic img{
+    height: 300px;
+    width: 300px;
+}
+
+.textInfo{
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .mySkills{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic{
+        justify-content: center;
+        padding: 0;
+    }
+    .textInfo{
+       text-align: center;
+       padding: 0px;
+       padding-top: 10px;
+    }
+}
